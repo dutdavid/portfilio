@@ -32,24 +32,22 @@ const Computers = () => {
 const ComputersCanvas = () => {
   return (
     <Canvas
-      frameloop='demand'
+      frameLoop="demand"
       shadows
-      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
+      <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
         <Computers />
       </Suspense>
-
       <Preload all />
     </Canvas>
-  );
-};
+  )
+}
 
-export default Computers
+export default ComputersCanvas;
