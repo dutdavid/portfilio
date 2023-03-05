@@ -6,6 +6,30 @@ import { styles } from  '../styles';
 import { services } from "../constants";
 import { fadeIn, textVariant } from '../utils/motion';
 
+
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+      variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+
+      </motion.div>
+      <div
+      options={{
+        max: 45,
+        scale: 1,
+        speed: 450
+      }}
+      className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+      >
+
+      </div>
+
+    </Tilt>
+  )
+}
 const About = () => {
   return (
     <>
@@ -23,6 +47,13 @@ const About = () => {
         My career goal is to gain a role which allows me to further my knowledge and skills, 
         as well as increased responsibility at a market-leading and innovative company.
       </motion.p>
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+        <ServiceCard key={service.title} index=
+        {index} {...service} />
+
+        ))}
+      </div>
     </>
   )
 }
