@@ -8,7 +8,14 @@ import { fadein, textVariant } from '../utils/motion';
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <motion.div>
+      <p className={sectionSubText}>
+        Introduction
+      </p>
+      <h2 className={styles.sectionHeadText}>Overview.</h2>
+    </motion.div>
+    </>
   )
 }
 
