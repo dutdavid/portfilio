@@ -33,21 +33,18 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia(
-      '(max-width: 500');
-    setIsMobile(mediaQuery.matches);
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia('(max-width: 500');
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-    }
+    };
 
-    mediaQuery.addEventListener('change',
-    handleMediaQueryChange);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
     return () => {
-      mediaQuery.removeEventListener('change',
-      handleMediaQueryChange);
-    }
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
   }, [third])
 
   return (
