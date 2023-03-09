@@ -10,7 +10,9 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <div>Ball</div>
+    <Float speed={.75} rotationIntensity={1} floatIntensity={2}>
+      <ambientLight intensity={0.25} />
+    </Float>
   )
 }
 
@@ -31,4 +33,4 @@ const BallCanvas = ({ icon }) => {
   )
 }
 
-export default Ball
+export default BallCanvas
