@@ -23,10 +23,8 @@ const BallCanvas = ({ icon }) => {
       <Suspense fallback={<CanvasLoader />}>
       <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Ball imgUrl={icon} />
       </Suspense>
       <Preload all />
     </Canvas>
