@@ -14,14 +14,6 @@ const Works = () => {
     <p className={styles.sectionSubText}>My Projects</p>
          <h2 className={styles.sectionHeadText}>Projects</h2>
     </motion.div>
-    <div className="mt-20 flex flex-col">
-     <VerticalTimeline>
-       {experiences.map((experience, index) => (
-         <ExperienceCard key={index} experience={experience} />
-       ))}
-     </VerticalTimeline>
- 
-    </div>
     </>
   )
 }
