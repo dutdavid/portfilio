@@ -173,26 +173,26 @@ import {
     {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but Dut proved me wrong.",
-      name: "Mark Doe",
-      designation: "CFO",
-      company: "Acme Co",
+      name: "Patricia",
+      designation: "CEO",
+      company: "Visiting Angels",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Dut does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "John Doe",
+      name: "Gilbert Murimi",
+      designation: "CEO",
+      company: "Sheena Cabs",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
         "After Dut optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Doe",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      name: "Emmanuel Nasila",
+      designation: "CEO",
+      company: "Known",
+      image: "https://randomuser.me/api/portraits/men/6.jpg",
     },
   ];
   
