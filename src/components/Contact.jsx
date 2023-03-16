@@ -19,10 +19,12 @@ const Contact = () => {
   const handleChange = (e) => {}
 
   const handleSubmit = (e) => {}
-}
 
 return (
-  <div>Contact</div>
+  <div className="xl:mt xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+
+  </div>
 )
+}
 
 export default Contact
