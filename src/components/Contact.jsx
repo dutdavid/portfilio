@@ -8,9 +8,11 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
 }
 
 export default Contact
