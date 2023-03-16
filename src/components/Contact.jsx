@@ -15,6 +15,14 @@ const Contact = () => {
     message: '',
   });
   const [loading, setloading] = useState(false);
+
+  const handleChange = (e) => {}
+
+  const handleSubmit = (e) => {}
 }
+
+return (
+  <div>Contact</div>
+)
 
 export default Contact
