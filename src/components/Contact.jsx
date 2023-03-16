@@ -27,4 +27,4 @@ return (
 )
 }
 
-export default Contact
+export default SectionWrapper(Contact, "contact")
