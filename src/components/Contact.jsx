@@ -13,7 +13,8 @@ const Contact = () => {
     name: '',
     email: '',
     message: '',
-  })
+  });
+  const [loading, setloading] = useState(false);
 }
 
 export default Contact
